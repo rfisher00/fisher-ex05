@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+/*
+run {
+    StandardInput = System.in
+}
+
+application {
+    MainClass = "ex05"
+}
+
+error message: Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+The latest version is 7.2... what is this error message? I couldn't see the deprecations when I tried.
+
+the application plugin is also missing from my gradle build
+
+
+ */
+
